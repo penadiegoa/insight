@@ -1,2 +1,2 @@
-# Insight Coding Challenge README
-# No Comments thus far
+# Insight Coding Challenge
+No Comments thus far
