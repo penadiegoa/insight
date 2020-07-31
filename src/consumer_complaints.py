@@ -4,7 +4,7 @@ import csv
 ________________________Open file and create a 2D list data set____________________
 '''
 
-with open('/input/complaints.csv') as file:
+with open('input/complaints.csv') as file:
     reader = csv.reader(file)
     dataset = []
     for line in reader:
@@ -53,7 +53,7 @@ output = create_dictionary(dataset)
 _________________________Calculate stats & print output__________________________
 '''
 
-with open('/output/report.csv', 'w', newline='') as file:
+with open('output/report.csv', 'w', newline='') as file:
     output_writer = csv.writer(file)
 
     for pair in sorted(output.keys()):
