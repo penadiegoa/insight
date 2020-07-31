@@ -8,7 +8,7 @@ with open('input/complaints.csv') as file:
     reader = csv.reader(file)
     dataset = []
     for line in reader:
-        row = ['20' + line[0][-2:], line[1], line[7]]
+        row = [line[0][:5], line[1], line[7]]  # Assuming a YYYY-MM-DD date format 
         dataset.append(row)
 
 dataset = dataset[1:]
