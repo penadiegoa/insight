@@ -5,13 +5,12 @@ ________________________Open file and create a 2D list data set_________________
 '''
 
 with open('input/complaints.csv') as file:
+    next(file)  # skip the first row
     reader = csv.reader(file)
     dataset = []
     for line in reader:
-        row = [int(line[0][:4]), line[1], line[7]]  # Assuming a YYYY-MM-DD date format 
+        row = [line[0][:4], line[1], line[7]]  # Assuming a YYYY-MM-DD date format
         dataset.append(row)
-
-dataset = dataset[1:]
 
 '''
 _______Index_______
