@@ -68,4 +68,4 @@ with open('output/report.csv', 'w', newline='') as file:
 
         stat_3 = round(max_tally * 100 / stat_1)
 
-        output_writer.writerow([pair[:-5], pair[-4:], str(stat_1), str(stat_2), str(stat_3)])
+        output_writer.writerow([pair[:-5].lower(), pair[-4:], str(stat_1), str(stat_2), str(stat_3)])
